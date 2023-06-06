@@ -1,10 +1,14 @@
 let enterThis = ""
-let audio = new Audio("media/audio.mp3");
+let audio = new Audio("../media/audio.mp3");
 audio.loop = true;
 let playing = false;
+let firstCharacterTyped = false;
 
-//Play song on any key press
-document.addEventListener('onkeydown', playSong())
+userInput.addEventListener('keydown', function(event) {
+  if (!firstCharacterTyped) {
+    playSong();
+    firstCharacterTyped = true;
+  }})
 
 window.addEventListener('DOMContentLoaded', function() {
   // User focus
@@ -132,13 +136,14 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
   });
-  function playSong() {
-    if (!playing) {
-      audio.play();
-      playing = true;
-    } else {
-      audio.pause();
-      playing = false;
-    }
-  }
 });
+
+function playSong() {
+  if (!playing) {
+    audio.play();
+    playing = true;
+  } else {
+    audio.pause();
+    playing = false;
+  }
+}
