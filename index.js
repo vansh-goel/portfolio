@@ -3,6 +3,9 @@ let audio = new Audio("media/audio.mp3");
 audio.loop = true;
 let playing = false;
 
+//Play song on any key press
+document.addEventListener('onkeydown', playSong())
+
 window.addEventListener('DOMContentLoaded', function() {
   // User focus
   var userInput = document.getElementById('userInput');
