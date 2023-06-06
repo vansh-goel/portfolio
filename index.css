@@ -1,0 +1,117 @@
+body {
+    background-color: #142441;
+}
+
+.art {
+    margin-bottom: 20px;
+    color : #edd7c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    font-size: 20px;
+}
+
+hr {
+    background-color: #917FB3;
+    padding-bottom: 3px;
+    border: none;
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.clone {
+    height: 20%;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.clone.remove-animation{
+    animation: remove-clone 1s ease forwards;
+    transform-origin: top center;
+}
+
+.clone.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#terminal *{
+    font-family: 'Source Code Pro', monospace;
+    align-content: center;
+    display: flex;
+    color: #edd7c7;
+    margin-right: 20px;
+}
+
+#prefix {
+    color: #ECF2FF;
+    font-weight: 700;
+}
+
+#userInput, .in {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    resize: none;
+    caret-color: #9BA4B5; 
+    caret-shape: block;
+    animation: blink-caret 1s infinite; 
+    overflow: hidden;
+    border: none;
+    background: none;
+}
+
+#userInput:focus {
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    background: none;
+}
+
+.in {
+    font-size: 12px;
+}
+
+.error {
+    color: red;
+}
+
+.fadeOut {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.3px ease;
+}
+
+.fab {
+    display: none;
+    opacity: 0;
+}
+
+img {
+    height: 25px;
+}
+
+@keyframes blink-caret {
+    from, to {
+      border-color: transparent; /* Make the cursor invisible */
+    }
+    50% {
+      border-color: #9BA4B5; /* Set the cursor color during the blink */
+    }
+  }
+
+  @keyframes remove-clone {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+  }
