@@ -1,5 +1,5 @@
 let enterThis = ""
-let audio = new Audio("../media/audio.mp3");
+let audio = new Audio("media/audio.mp3");
 audio.loop = true;
 let playing = false;
 let firstCharacterTyped = false;
