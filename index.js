@@ -4,8 +4,6 @@ audio.loop = true;
 let playing = false;
 
 window.addEventListener('DOMContentLoaded', function() {
-  // Play the background music
-  playSong()
   // User focus
   var userInput = document.getElementById('userInput');
   userInput.focus();
