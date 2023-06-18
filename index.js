@@ -49,13 +49,13 @@ window.addEventListener('DOMContentLoaded', function() {
         clone.classList.add("active");
       }, 10);
 
-      if (inputText === "whois") {
+      if (inputText === "whois" || inputText === 'vansh' || inputText === "whoamI") {
         clone.querySelector('pre').style.fontSize= "14px"
         clone.querySelector('pre').style.width = "80%";
         window.scrollTo(0, document.body.scrollHeight);
       }
 
-      if (inputText === "ls") {
+      if (inputText === "ls" || inputText === 'man' || inputText === "help") {
         clone.querySelector('pre').style.color = "#FEFF86"
       }
 
