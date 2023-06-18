@@ -75,8 +75,8 @@ window.addEventListener('DOMContentLoaded', function() {
     function process(inputText) {
       inputVal = inputText.toLowerCase()
       switch(inputVal) {
-        case 'help' :
-          insertText = "Bruh you're on a terminal," + "\nUse ls to list the available commands"
+        case 'sudo su' :
+          insertText = "Nope, not happening," + "\nUse ls to list the available commands"
           return insertText;
           break;
         case 'clear' :
@@ -88,6 +88,8 @@ window.addEventListener('DOMContentLoaded', function() {
           clear();
           return none;
           break;
+        case 'man' :
+        case 'help' :
         case 'ls' :
           insertText = "whois     Shows details about the owner" + 
                      "\t| clear     Clears the terminal" +
@@ -99,7 +101,8 @@ window.addEventListener('DOMContentLoaded', function() {
                      "\t| music       Play/Pause music"
           return insertText
           break;
-        
+        case 'vansh' :
+        case 'whoamI' :
         case "whois" :
           insertText = "👋 Hey there! I'm Vansh, a tech enthusiast passionate about Linux and the command-line interface. 🐧\nI'm a freshman at the University School of Automation and Robotics, these days I'm diving into web development. 💻" +
 
@@ -123,7 +126,7 @@ window.addEventListener('DOMContentLoaded', function() {
           return insertText
           break
         case "wha-" :
-          window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+          window.location.reload("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
           break
         case "music" :
           playSong()
