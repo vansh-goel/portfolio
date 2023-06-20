@@ -200,7 +200,7 @@ img {
 
   @media screen and (max-width: 880px) {
     .in {
-        font-size: 10px;
+        font-size: 7px;
     }
     img {
         height: 15px;
