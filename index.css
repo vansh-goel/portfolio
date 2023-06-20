@@ -184,6 +184,9 @@ img {
     .clone, #input-line {
         font-size: 10px;
     }
+    .in {
+        font-size: 8px;
+    }
   }
 
   @media screen and (max-width: 370px) {
