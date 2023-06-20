@@ -205,38 +205,38 @@ img {
   }
 
   @media screen and (max-width: 745px) {
-    .in {
+    /* .in {
         font-size: 8px;
     }
     img {
         height: 10px;
-    }
+    } */
   }
 
   @media screen and (max-width: 606px) {
-    .in {
+    /* .in {
         font-size: 6px;
         margin-right: 0px;
     }
     img {
         height: 8px;
-    }
+    } */
   }
 
   @media screen and (max-width: 428px) {
-    .in {
+    /* .in {
         font-size: 4.5px;
     }
     img {
         height: 5px;
-    }
+    } */
   }
 
   @media screen and (max-width: 332px) {
-    .in {
+    /* .in {
         font-size: 4.21px;
     }
     img {
         height: 5px;
-    }
+    } */
   }
