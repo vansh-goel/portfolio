@@ -202,9 +202,9 @@ img {
     .in {
         font-size: 7px;
     }
-    img {
+    /* img {
         height: 15px;
-    }
+    } */
   }
 
   @media screen and (max-width: 745px) {
