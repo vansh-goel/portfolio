@@ -92,13 +92,13 @@ window.addEventListener('DOMContentLoaded', function() {
         case 'help' :
         case 'ls' :
           insertText = "whois     Shows details about the owner" + 
-                     "\t| clear     Clears the terminal" +
+                     "\nclear     Clears the terminal" +
                      "\nls        Shows the list of commands" +
-                     "\t| projects  Shows the list of owner's projects" +
+                     "\nprojects  Shows the list of owner's projects" +
                      "\nskills    Shows list of owner's skills" +
-                     "\t| socials   Displays social links" +
+                     "\nsocials   Displays social links" +
                      "\nwha-      What's this supposed to do?"+
-                     "\t| music       Play/Pause music"
+                     "\nmusic     Play/Pause music"
           return insertText
           break;
         case 'vansh' :
