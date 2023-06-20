@@ -15,6 +15,28 @@ body {
     font-size: 20px;
 }
 
+pre {
+    font-size: 10px;
+}
+
+.clone .active {
+    margin-right: 0px;
+}
+
+.clone {
+    margin-right: 0px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#prefix {
+    flex-grow: 0;
+}
+
+.in {
+    flex-grow: 1;    
+}
+
 hr {
     background-color: #917FB3;
     padding-bottom: 3px;
@@ -50,6 +72,7 @@ hr {
 }
 
 #input-line {
+    align-items: center;
     justify-content: flex-start;
     width: 100%;
     display: flex;
@@ -57,6 +80,7 @@ hr {
 }
 
 #input-line textarea {
+    width: 60%;
     margin-right: 0px;
 }
 
@@ -86,6 +110,7 @@ hr {
 }
 
 .in {
+    margin-right: 0px;
     display: flex;
     font-size: 12px;
 }
@@ -142,9 +167,9 @@ img {
         flex-direction: column;
         justify-content: center;
     }
-    .in {
+    /* .in {
         font-size: 10px;
-    }
+    } */
   }
 
   @media screen and (max-width: 600px) {
@@ -152,12 +177,6 @@ img {
         font-size: 10px;
         flex-direction: column;
         justify-content: center;
-    }
-    .in {
-        display: flex;
-        flex-basis: 50%;
-        font-size: 5px;
-        flex-wrap: wrap;
     }
     .item-skill {
         flex-wrap: wrap;
@@ -170,5 +189,54 @@ img {
   @media screen and (max-width: 370px) {
     #input-line {
         font-size: 10px;
+    }
+    textarea::placeholder {
+        font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 880px) {
+    .in {
+        font-size: 10px;
+    }
+    img {
+        height: 15px;
+    }
+  }
+
+  @media screen and (max-width: 745px) {
+    .in {
+        font-size: 8px;
+    }
+    img {
+        height: 10px;
+    }
+  }
+
+  @media screen and (max-width: 606px) {
+    .in {
+        font-size: 6px;
+        margin-right: 0px;
+    }
+    img {
+        height: 8px;
+    }
+  }
+
+  @media screen and (max-width: 428px) {
+    .in {
+        font-size: 4.5px;
+    }
+    img {
+        height: 5px;
+    }
+  }
+
+  @media screen and (max-width: 332px) {
+    .in {
+        font-size: 4.21px;
+    }
+    img {
+        height: 5px;
     }
   }

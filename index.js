@@ -47,10 +47,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
       setTimeout(function() {
         clone.classList.add("active");
+        clone.style.marginRight="0px";
       }, 10);
 
       if (inputText === "whois" || inputText === 'vansh' || inputText === "whoamI") {
-        clone.querySelector('pre').style.fontSize= "14px"
+        clone.querySelector('pre').style.marginRight= "0px"
         clone.querySelector('pre').style.width = "80%";
         window.scrollTo(0, document.body.scrollHeight);
       }
@@ -104,7 +105,7 @@ window.addEventListener('DOMContentLoaded', function() {
         case 'vansh' :
         case 'whoamI' :
         case "whois" :
-          insertText = "👋 Hey there! I'm Vansh, a tech enthusiast passionate about Linux and the command-line interface. 🐧\nI'm a freshman at the University School of Automation and Robotics, these days I'm diving into web development. 💻" +
+          insertText = "👋 Hey there! I'm Vansh, a tech enthusiast passionate about Linux and the command-line interface.🐧\nI'm a freshman at the University School of Automation and Robotics, these days I'm diving into web development. 💻" +
 
           "\nI love building Bash projects, including web scraping ones, and being an active part of tech communities.\n👨‍💻 Besides coding, I'm an avid reader and enjoy having insightful conversations.\n📚 I also groove to alt/indie rock music 🎸 and love listening to podcasts. 🎧" +
           
