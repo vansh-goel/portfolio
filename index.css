@@ -227,18 +227,18 @@ img {
   }
 
   @media screen and (max-width: 428px) {
-    /* .in {
+.in {
         font-size: 4.5px;
-    }
+    } /*
     img {
         height: 5px;
     } */
   }
 
   @media screen and (max-width: 332px) {
-    /* .in {
+ .in {
         font-size: 4.21px;
-    }
+    } /*
     img {
         height: 5px;
     } */
