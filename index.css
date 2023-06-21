@@ -200,7 +200,7 @@ img {
   }
 
   @media screen and (max-width: 880px) {
-    .in {
+    .deets {
         font-size: 9px;
     }
     /* img {
@@ -209,19 +209,19 @@ img {
   }
 
   @media screen and (max-width: 745px) {
-    .in {
+    .deets {
         white-space: normal;
     }
   }
 
   @media screen and (max-width: 606px) {
-    .in {
+    .deets {
         white-space: normal;
     }
   }
 
   @media screen and (max-width: 428px) {
-.in {
+.deets {
         white-space: normal;
     } /*
     img {
@@ -230,7 +230,7 @@ img {
   }
 
   @media screen and (max-width: 332px) {
- .in {
+ .deets {
         white-space: normal;
     } /*
     img {
