@@ -185,9 +185,6 @@ img {
     .clone, #input-line {
         font-size: 10px;
     }
-    .in {
-        font-size: 6px;
-    }
   }
 
   @media screen and (max-width: 370px) {
@@ -197,11 +194,14 @@ img {
     textarea::placeholder {
         font-size: 10px;
     }
+    .deets {
+        white-space: normal;
+    }
   }
 
   @media screen and (max-width: 880px) {
     .deets {
-        font-size: 9px;
+        white-space: normal;
     }
     /* img {
         height: 15px;
