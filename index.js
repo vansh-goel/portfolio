@@ -134,7 +134,7 @@ window.addEventListener('DOMContentLoaded', function() {
           return insertText
           break
         case "wha-" :
-          window.location.reload("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+          window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
           break
         case "music" :
           playSong()
