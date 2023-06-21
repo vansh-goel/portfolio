@@ -34,6 +34,7 @@ pre {
 }
 
 .in {
+    /* white-space: nowrap; */
     flex-grow: 1;    
 }
 
@@ -208,27 +209,20 @@ img {
   }
 
   @media screen and (max-width: 745px) {
-    /* .in {
-        font-size: 8px;
+    .in {
+        white-space: normal;
     }
-    img {
-        height: 10px;
-    } */
   }
 
   @media screen and (max-width: 606px) {
-    /* .in {
-        font-size: 6px;
-        margin-right: 0px;
+    .in {
+        white-space: normal;
     }
-    img {
-        height: 8px;
-    } */
   }
 
   @media screen and (max-width: 428px) {
 .in {
-        font-size: 8px;
+        white-space: normal;
     } /*
     img {
         height: 5px;
@@ -237,7 +231,7 @@ img {
 
   @media screen and (max-width: 332px) {
  .in {
-        font-size: 4.21px;
+        white-space: normal;
     } /*
     img {
         height: 5px;
